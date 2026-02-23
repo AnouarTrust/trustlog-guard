@@ -1,33 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
-  <defs>
-    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#E8C66A"/>
-      <stop offset="100%" style="stop-color:#C49A2A"/>
-    </linearGradient>
-  </defs>
-
-  <!-- Clean shield shape -->
-  <path d="M60 10
-           L100 30
-           C102 31 104 34 104 36
-           L104 62
-           C104 82 88 100 68 110
-           L62 113
-           C61 113.5 59 113.5 58 113
-           L52 110
-           C32 100 16 82 16 62
-           L16 36
-           C16 34 18 31 20 30
-           Z"
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <!-- Single clean shield, one color, no fills, just the mark -->
+  <path d="M50 8 L88 26 C89 26.5 90 28 90 29 L90 52 C90 72 74 88 54 97 L51 98.5 C50.5 98.7 49.5 98.7 49 98.5 L46 97 C26 88 10 72 10 52 L10 29 C10 28 11 26.5 12 26 Z"
         fill="none"
-        stroke="url(#g)"
-        stroke-width="2.5"/>
-
-  <!-- Simple dollar sign - the core symbol -->
-  <text x="60" y="78"
-        text-anchor="middle"
-        font-family="Arial, Helvetica, sans-serif"
-        font-weight="300"
-        font-size="42"
-        fill="url(#g)">$</text>
+        stroke="#D4A843"
+        stroke-width="1.8"/>
 </svg>
