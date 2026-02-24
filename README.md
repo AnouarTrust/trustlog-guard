@@ -26,7 +26,7 @@ TrustLog Guard is the first tool that does. One file. 100% local. Your data neve
 ## ⚡ Install in 10 Seconds
 
 ```bash
-curl -sL https://raw.githubusercontent.com/AnouarTrust/trustlog-guard/main/install.sh | bash
+clawhub install trustlog-guard
 ```
 
 Open your next OpenClaw session. Type `/spend`. That's it.
