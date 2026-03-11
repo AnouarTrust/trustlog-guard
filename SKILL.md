@@ -1,9 +1,9 @@
 ---
 name: trustlog-guard
 description: Financial governance for AI agents. Monitors every API call, detects cost anomalies before they become invoices, benchmarks your intelligence spend against market rates. Install it. Forget about it. It watches.
-version: 2.0.0
+version: 2.1.0
 author: Anouar
-tags: [finance, governance, cost-intelligence, risk, anomaly-detection, iq-index]
+tags: [finance, governance, cost-intelligence, risk, algorithmic-circuit-breaker, iq-index]
 ---
 
 # TrustLog Guard
@@ -70,14 +70,16 @@ This session has cost $7.40 so far (N messages, Xm duration).
 That's more than your average daily total.
 ```
 
-**🔄 Loop Detection**
-Trigger: more than 20 messages in a 10-minute window within one session.
+**🔄 Algorithmic Flash Crash (Convex Loop Detection)**
+Trigger: Continuous positive cost acceleration ($d^2C/dt^2 > 0$) across 3 consecutive API execution cycles.
 
-```
+Unlike standard rate-limits that punish high-velocity legitimate workloads, TrustLog monitors the second derivative of the API burn rate. If context-window bloat causes the cost-per-call to compound recursively, the system mathematically proves an epistemic failure loop is occurring.
+
+```text
 🚨 TrustLog Guard
-Possible loop detected. 24 messages in 8 minutes.
-Burn rate: $1.80/min. This will cost $108/hr if unchecked.
-Consider interrupting and reviewing the task.
+Algorithmic Flash Crash detected. Cost acceleration is strictly positive.
+Burn rate curve is convex. You are entering an epistemic failure loop.
+Action Taken: COMPTEX CIRCUIT BREAKER ENGAGED. PROCESS KILLED.
 ```
 
 **📈 Silent Model Escalation**
